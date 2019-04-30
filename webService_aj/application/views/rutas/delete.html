@@ -1,0 +1,47 @@
+$def with(rutas, message)
+<h3>
+    <a href="/rutas">rutas</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_ruta" id="id_ruta" value="$rutas.id_ruta" />
+
+    <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input readonly id="nombre" type="text" class="form-control" name="nombre" size="30" value="$rutas.nombre"/>
+</div><div class="form-group">
+    <label for="punto_inicio">Punto_inicio</label>
+    <input readonly id="punto_inicio" type="text" class="form-control" name="punto_inicio" size="30" value="$rutas.punto_inicio"/>
+</div><div class="form-group">
+    <label for="punto_final">Punto_final</label>
+    <input readonly id="punto_final" type="text" class="form-control" name="punto_final" size="30" value="$rutas.punto_final"/>
+</div><div class="form-group">
+    <label for="hora_inicio_labor">Hora_inicio_labor</label>
+    <input readonly id="hora_inicio_labor" type="text" class="form-control" name="hora_inicio_labor" size="30" value="$rutas.hora_inicio_labor"/>
+</div><div class="form-group">
+    <label for="hora_final_labor">Hora_final_labor</label>
+    <input readonly id="hora_final_labor" type="text" class="form-control" name="hora_final_labor" size="30" value="$rutas.hora_final_labor"/>
+</div><div class="form-group">
+    <label for="transcurso">Transcurso</label>
+    <input readonly id="transcurso" type="text" class="form-control" name="transcurso" size="30" value="$rutas.transcurso"/>
+</div><div class="form-group">
+    <label for="costo">Costo</label>
+    <input readonly id="costo" type="text" class="form-control" name="costo" size="30" value="$rutas.costo"/>
+</div><div class="form-group">
+    <label for="url_ruta">Url_ruta</label>
+    <input readonly id="url_ruta" type="text" class="form-control" name="url_ruta" size="30" value="$rutas.url_ruta"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,5 @@
+'/rutas', 'application.controllers.rutas.index.Index',
+'/rutas/view/(.+)', 'application.controllers.rutas.view.View',
+'/rutas/edit/(.+)', 'application.controllers.rutas.edit.Edit',
+'/rutas/delete/(.+)', 'application.controllers.rutas.delete.Delete',
+'/rutas/insert', 'application.controllers.rutas.insert.Insert',
